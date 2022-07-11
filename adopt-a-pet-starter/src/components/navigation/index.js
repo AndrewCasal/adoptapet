@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getPetTypes } from '../../api/petfinder';
 import Logo from '../../assets/logo.svg';
 import Search from '../search';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   const [petTypes, setPetTypes] = useState([]);
