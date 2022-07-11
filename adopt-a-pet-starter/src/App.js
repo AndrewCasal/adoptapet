@@ -6,14 +6,14 @@ import Navigation from './components/navigation';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
-  render () {
-    return (
-      <Router>
-        <Navigation />
+  return (
+    <Router>
+      <Navigation />
+      <Route path='/type?'>
         <HomePage />
-      </Router>
-    );
-  }
-  }
+      </Route>
+    </Router>
+  );
+}
 
 export default App;
