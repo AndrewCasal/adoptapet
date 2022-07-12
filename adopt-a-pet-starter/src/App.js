@@ -16,6 +16,9 @@ function App() {
         <Route path='/:type?'>
           <HomePage />
         </Route>
+        <Route path='/search'>
+          <SearchPage />
+        </Route>
       </Switch>
     </Router>
   );
