@@ -9,12 +9,14 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <Route path='/:type/:id'>
-        <PetDetailsPage />
-      </Route>
-      <Route path='/:type?'>
-        <HomePage />
-      </Route>
+      <Switch>
+        <Route path='/:type/:id'>
+          <PetDetailsPage />
+        </Route>
+        <Route path='/:type?'>
+          <HomePage />
+        </Route>
+      </Switch>
     </Router>
   );
 }
