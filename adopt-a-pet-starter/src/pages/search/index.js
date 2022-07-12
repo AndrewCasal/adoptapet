@@ -19,7 +19,7 @@ const SearchPage = () => {
 
   useEffect(() => {
     async function getPetsData() {
-      const petNameToFind = 'REPLACE ME';
+      const petNameToFind = queryParams.get('name');
       const petsData = await getPets('', petNameToFind);
 
       setPets(petsData);
