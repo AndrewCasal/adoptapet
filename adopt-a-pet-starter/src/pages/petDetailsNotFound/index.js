@@ -10,6 +10,7 @@ const PetDetailsNotFound = () => {
 
   const goBack = () => {
     // Go back!
+    history.goBack();
   }
   
   return (
