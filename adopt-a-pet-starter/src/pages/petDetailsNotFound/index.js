@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 const PetDetailsNotFound = () => {
 
   // get the history object from useHistory()
+  const history = useHistory();
 
   const goBack = () => {
     // Go back!
