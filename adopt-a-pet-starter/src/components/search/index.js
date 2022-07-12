@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
+import { useHistory } from 'react-router-dom';
 
 // import useHistory here.
 
 const Search = () => {
 
   // get the history object here
+  const history = useHistory();
 
   const searchInputRef = useRef();
 
