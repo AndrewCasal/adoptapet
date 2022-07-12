@@ -12,7 +12,7 @@ const SearchPage = () => {
   const { search } = useLocation();
 
   const queryParams = useMemo(() => { 
-    return new URLSearchParams('REPLACE ME');
+    return new URLSearchParams(search);
   }, [search]);
 
   const [pets, setPets] = useState([]);
